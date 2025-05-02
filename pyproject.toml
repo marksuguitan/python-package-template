@@ -1,0 +1,21 @@
+
+[build-system]
+requires = ["setuptools>=69.0", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-package"                       # replace with your distribution name
+version = "0.1.0"
+description = "Generic Python package template – rename and extend."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.urls]
+Documentation = "https://github.com/your-org/my-package"
+Source        = "https://github.com/your-org/my-package"
+
+[tool.setuptools.packages.find]
+where = ["src"]
