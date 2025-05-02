@@ -10,4 +10,4 @@
 3. Push to a GitHub repo marked **Template repository**.
 4. Tag a release (`git tag v0.1.0 && git push --tags`) to build & publish via GitHub Actions.
 
-See the original ChatGPT instructions for more details.
+see: https://chatgpt.com/share/6814e042-cdd8-800e-ba3b-f839d02175cf
