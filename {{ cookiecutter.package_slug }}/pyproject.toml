@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=69.0", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# Use distribution_slug for the PyPI package name (usually allows hyphens)
+name = "{{ cookiecutter.distribution_slug }}"
+version = "0.1.0" # You might want to add a "version" variable to cookiecutter.json later
+# Use the description variable
+description = "{{ cookiecutter.description }}"
+readme = "README.md"
+# Use the license variable. Note: This assumes the user selects a single string.
+# If you want to handle the list choice properly, it might require post-generation hooks.
+license = { text = "{{ cookiecutter.license }}" }
+# Use author name and email variables
+authors = [{ name = "{{ cookiecutter.author_name }}", email = "{{ cookiecutter.author_email }}" }]
+# Use the python_min_version variable
+requires-python = ">={{ cookiecutter.python_min_version }}"
+dependencies = []
+
+[project.urls]
+# Use github_user and distribution_slug variables
+Documentation = "https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.distribution_slug }}/"
+Source        = "https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.distribution_slug }}/"
+
+[tool.setuptools.packages.find]
+where = ["src"]
